@@ -9,7 +9,6 @@ export default {
     methods : {
         todoRemoveAll(){
             this.$store.commit('todoRemoveAll');
-            console.log(this.$store.getters.getTodoList);
         }
     }
 }

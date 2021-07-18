@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    total:0,
+    total: 0,
     todoList:[]
   },
   getters:{
@@ -15,9 +15,11 @@ export default new Vuex.Store({
   },
   mutations: {
     increment (state) {
+      if(state.total < 0) return;
       state.total++
     },
     decrement (state) {
+      if(state.total < -1) return;
       state.total--
     },
     todoAdd(state, value){
@@ -39,7 +41,7 @@ export default new Vuex.Store({
     todoRemoveAll(state){
       localStorage.removeItem('todoList');
       state.todoList = [];
-      console.log(state.todoList);
+      state.total = 0;
     }
 
   },

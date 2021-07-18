@@ -2,7 +2,7 @@
     <div class="title">
         <p>Hi, {{ name }} !</p>
         <span>{{ today }}</span>
-        <p>총 할 일 : {{ total }}</p>
+        <p>총 할 일 : {{ this.$store.state.total }}</p>
     </div>
 </template>
 <script>
@@ -10,7 +10,6 @@ export default {
     data(){
         return{
             name : 'Subin',
-            total : 0
         }
     },
     created(){

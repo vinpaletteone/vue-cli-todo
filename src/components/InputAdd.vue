@@ -29,6 +29,8 @@ export default {
 
                 this.todoAdd(value);
                 this.$store.commit('todoLocalSet');
+
+                this.$store.commit('increment');
                 this.clearInput();
             }
         },
