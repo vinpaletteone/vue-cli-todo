@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <v-title />
-    <filter />
+    <v-filter />
     <input-add />
     <v-list />
   </div>
 </template>
 
 <script>
-import Filter from '../components/Filter.vue'
 import InputAdd from '../components/InputAdd.vue'
 import VList from '../components/vList.vue'
 import VTitle from '../components/vTitle.vue'
+import VFilter from '../components/vFilter.vue'
 
 export default {
   name: 'Home',
@@ -19,7 +19,7 @@ export default {
     VTitle,
     InputAdd,
     VList,
-    Filter,
+    VFilter
   }
 }
 </script>

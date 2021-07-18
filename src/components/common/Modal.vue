@@ -1,5 +1,5 @@
 <template>
-    
+    <p>modal</p>
 </template>
 
 <script>
