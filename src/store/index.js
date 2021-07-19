@@ -42,8 +42,10 @@ export default new Vuex.Store({
       localStorage.removeItem('todoList');
       state.todoList = [];
       state.total = 0;
+    },
+    totalSet(state, value){
+      state.total = value;
     }
-
   },
   actions: {
   },
