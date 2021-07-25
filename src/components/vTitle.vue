@@ -5,6 +5,11 @@
         <p>총 할 일 : {{ $store.state.total }}</p>
     </div>
 </template>
+<style lang="scss">
+    p {
+        color:$orange
+    }
+</style>
 <script>
 export default {
     data(){
